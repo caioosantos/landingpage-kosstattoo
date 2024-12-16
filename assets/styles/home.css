@@ -1,0 +1,7 @@
+.home {
+	background-image: url(../img/background.svg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	opacity: 30%;
+}
