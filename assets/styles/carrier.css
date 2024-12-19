@@ -1,0 +1,38 @@
+.career {
+	background-color: var(--second-bg-color);
+}
+
+.career_container {
+	display: flex;
+	justify-content: space-between;
+	justify-items: center;
+}
+
+.career_container_img {
+	display: flex;
+	margin-bottom: -40px;
+	max-width: 60%;
+}
+.career_container_img img {
+	width: 100%;
+}
+
+.career_container_text {
+	max-width: 60%;
+	margin-left: 20px;
+}
+
+.career-text {
+	font-size: 1.2rem;
+}
+
+.career_container_text a {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	font-size: 2rem;
+	text-transform: uppercase;
+	color: var(--main-color);
+}
+
+
