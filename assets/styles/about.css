@@ -1,3 +1,25 @@
 .about {
-	background-color: var(--second-bg-color);
+  background-color: var(--second-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* height: 80vh; */
+}
+
+#about_photo {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.about_text {
+  font-size: 2rem;
+  margin: 20px 20px 20px 0;
 }

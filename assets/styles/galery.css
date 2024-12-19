@@ -1,0 +1,35 @@
+.galery_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.galery_container_img {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.galery_container_img img {
+  width: 20%;
+  border-radius: 20px;
+}
+
+.galery_container_img img:nth-child(n + 9) {
+  display: none;
+}
+
+.galery_container_img.show-all img {
+  display: block;
+}
+
+.galery_container button {
+  margin-top: 2%;
+  width: 10%;
+  padding: 10px 10px;
+  cursor: pointer;
+}

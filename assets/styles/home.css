@@ -1,7 +1,34 @@
 .home {
-	background-image: url(../img/background.svg);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	opacity: 30%;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/background.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.home_container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.home_container_galery_work h3 {
+  font-size: 2rem;
+}
+
+.name_title {
+  font-size: 6rem;
+  text-transform: uppercase;
+}
+
+.intro_text {
+  font-size: 3rem;
+  text-transform: uppercase;
 }
