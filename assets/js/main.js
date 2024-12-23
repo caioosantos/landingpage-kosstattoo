@@ -10,7 +10,3 @@ button.addEventListener("click", () => {
     button.textContent = "Ver Menos";
   }
 });
-
-export default {
-  base: "/landingpage-kosstattoo/",
-};
