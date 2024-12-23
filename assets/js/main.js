@@ -1,14 +1,16 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const button = document.querySelector(".show-more");
-  const gallery = document.querySelector(".galery_container_img");
+const button = document.querySelector(".show-more");
+const gallery = document.querySelector(".galery_container_img");
 
-  button.addEventListener("click", () => {
-    if (gallery.classList.contains("show-all")) {
-      gallery.classList.remove("show-all");
-      button.textContent = "Ver Mais";
-    } else {
-      gallery.classList.add("show-all");
-      button.textContent = "Ver Menos";
-    }
-  });
+button.addEventListener("click", () => {
+  if (gallery.classList.contains("show-all")) {
+    gallery.classList.remove("show-all");
+    button.textContent = "Ver Mais";
+  } else {
+    gallery.classList.add("show-all");
+    button.textContent = "Ver Menos";
+  }
 });
+
+export default {
+  base: "/landingpage-kosstattoo/",
+};
