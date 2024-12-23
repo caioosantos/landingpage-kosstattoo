@@ -59,10 +59,13 @@ section {
   z-index: 100;
 }
 
+.header input,
+.header label {
+  display: none;
+}
+
 .menu_header {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+  position: relative;
 }
 
 .menu_header a {
@@ -70,6 +73,7 @@ section {
   margin-left: 4.5rem;
   color: var(--text-color);
   text-transform: uppercase;
+  font-weight: 500;
 }
 
 .menu_header a:hover,
@@ -120,4 +124,72 @@ section {
 
 .footer {
   height: 80px;
+}
+
+@media (max-width: 768px) {
+  .menu_header {
+    display: none;
+    position: absolute;
+    top: 80%;
+    right: 10%;
+    width: 150px;
+    z-index: 1;
+    text-align: end;
+  }
+
+  .header a img {
+    width: 75%;
+  }
+
+  .header label {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    z-index: 2;
+  }
+
+  .menu-icon {
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: var(--main-color);
+    transition: transform 0.4s ease, opacity 0.4s ease;
+  }
+
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: var(--main-color);
+    transition: transform 0.4s ease, top 0.4s ease, opacity 0.4s ease;
+  }
+
+  .menu-icon::before {
+    top: -10px;
+  }
+
+  .menu-icon::after {
+    top: 10px;
+  }
+
+  .check-menu:checked + .menu-icon {
+    background: transparent;
+  }
+
+  .check-menu:checked + .menu-icon::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .check-menu:checked + .menu-icon::after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .check-menu:checked + .menu-icon + .menu_header {
+    display: block;
+  }
 }
